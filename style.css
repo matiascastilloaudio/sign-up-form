@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(fonts/Norse-Bold.otf);
+}
+
+/* global */
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 238, 241);
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h3 {
+    width: 55ch;
+}
+
+/* left-side */
+
+.left {
+    width: 40%;
+    height: 100vh;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    margin-top: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse-Bold';
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
+}
+
+.left p,
+.left a {
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+/* right-side */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.right>div {
+    padding: 20px 40px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    gap: 20px;
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.5rem;
+    color: gray;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+input {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input:focus,
+input:focus-visible {
+    border-color: blue;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+input:invalid:focus,
+input:focus:invalid {
+    border-color: red;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    color: white;
+    margin: 20px 0 0 40px;
+}
+
+button:hover {
+    background-color: #4e5f3e;
+}
+
+button:active {
+    transform: scale(0.98);
+
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #84a06a;
+}
